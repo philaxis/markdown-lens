@@ -1,5 +1,7 @@
 .markdown-lens-preview {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: var(--layer-popover, 30);
   box-sizing: border-box;
   overflow: hidden;
