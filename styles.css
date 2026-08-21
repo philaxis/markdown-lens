@@ -26,7 +26,7 @@
 }
 
 .markdown-lens-preview.is-visible.is-pointer-over {
-  opacity: 0.18 !important;
+  opacity: 0.18;
 }
 
 .markdown-lens-document {
