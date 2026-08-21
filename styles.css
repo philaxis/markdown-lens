@@ -1,0 +1,72 @@
+.markdown-lens-preview {
+  position: fixed;
+  z-index: var(--layer-popover, 30);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--background-modifier-border-hover);
+  border-radius: 6px;
+  background: var(--background-primary);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 28%);
+  color: var(--text-normal);
+  contain: layout paint style;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  visibility: hidden;
+  will-change: transform;
+}
+
+.markdown-lens-preview.is-visible {
+  opacity: 1;
+  transition: opacity 100ms ease, transform 140ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  visibility: visible;
+}
+
+.markdown-lens-preview.is-visible.is-pointer-over {
+  opacity: 0.18 !important;
+}
+
+.markdown-lens-document {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 var(--size-4-2);
+}
+
+.markdown-lens-render-staging {
+  z-index: -1;
+  overflow: visible;
+  opacity: 0;
+  transition: none;
+  visibility: visible;
+}
+
+.markdown-lens-document > :first-child {
+  margin-top: 0;
+}
+
+.markdown-lens-document > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-lens-document img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: var(--markdown-lens-image-height, 3lh);
+}
+
+.markdown-lens-document pre code > :is(.line, .code-block-line):empty {
+  display: block;
+  min-height: 1lh;
+}
+
+.markdown-lens-focus-line {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-left: 3px solid var(--interactive-accent);
+  background: color-mix(in srgb, var(--interactive-accent) 18%, transparent);
+}

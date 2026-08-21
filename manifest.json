@@ -1,0 +1,10 @@
+{
+  "id": "markdown-lens",
+  "name": "Markdown Lens",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.7",
+  "description": "Preview rendered Markdown at the cursor while writing in Source mode.",
+  "author": "Juhyeok Kim",
+  "authorUrl": "https://github.com/philaxis",
+  "isDesktopOnly": true
+}
