@@ -14,4 +14,4 @@ Enable the plugin, switch a note to **Source mode**, and place the cursor in the
 
 Until it reaches the Community directory, install it with BRAT from `https://github.com/philaxis/markdown-lens`.
 
-Desktop only. No account, network access, ads, or telemetry. Closed source; personal and internal business use is allowed under the [commercial license](./LICENSE).
+Desktop only. No account, ads, or telemetry; note content is not transmitted. Closed source; personal and internal business use is allowed under the [commercial license](./LICENSE).
