@@ -2,7 +2,7 @@
 
 [English](./README.md) | [한국어](./README_KO.md) | [简体中文](./README_CN.md)
 
-![Markdown Lens in Source mode](./markdown-lens-demo-v2.gif)
+![Markdown Lens in Source mode](./markdown-lens-demo-v3.gif)
 
 Markdown is easiest to control when its syntax stays visible. Markdown Lens keeps **Source mode** as the main workspace and opens a small rendered view around the cursor—without switching modes or hiding the source.
 
