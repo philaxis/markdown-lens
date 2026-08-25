@@ -1,7 +1,7 @@
 {
   "id": "markdown-lens",
   "name": "Markdown Lens",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minAppVersion": "1.5.7",
   "description": "Preview rendered Markdown at the cursor while writing in Source mode.",
   "author": "Juhyeok Kim",
