@@ -55,7 +55,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: var(--markdown-lens-image-height, 3lh);
+  max-height: 3lh;
 }
 
 .markdown-lens-document pre code > :is(.line, .code-block-line):empty {
@@ -71,4 +71,55 @@
   box-sizing: border-box;
   border-left: 3px solid var(--interactive-accent);
   background: color-mix(in srgb, var(--interactive-accent) 18%, transparent);
+}
+
+.markdown-lens-cursor-marker {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  vertical-align: baseline;
+}
+
+.markdown-lens-cursor-marker::before {
+  position: absolute;
+  z-index: 2;
+  top: var(--markdown-lens-marker-center-y, -0.5em);
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  content: "";
+}
+
+.markdown-lens-cursor-marker.is-start::before,
+.markdown-lens-cursor-marker.is-caret::before {
+  right: 0;
+  width: 6px;
+  height: 1.5em;
+  border-right: 3px solid var(--interactive-accent);
+  border-radius: 0 100% 100% 0;
+}
+
+.markdown-lens-cursor-marker.is-end::before {
+  left: 0;
+  width: 6px;
+  height: 1.5em;
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 100% 0 0 100%;
+}
+
+.markdown-lens-cursor-marker.is-caret::after {
+  position: absolute;
+  z-index: 2;
+  top: var(--markdown-lens-marker-center-y, -0.5em);
+  left: 0;
+  box-sizing: border-box;
+  width: 6px;
+  height: 1.5em;
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 100% 0 0 100%;
+  transform: translateY(-50%);
+  content: "";
 }

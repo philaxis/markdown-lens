@@ -12,7 +12,7 @@ Markdown is easiest to control when its syntax stays visible. Markdown Lens keep
 
 ## Use
 
-Enable the plugin, switch a note to **Source mode**, and place the cursor in the text. Lens and image height can be adjusted in the plugin settings.
+Enable the plugin, switch a note to **Source mode**, and place the cursor in the text. Lens width, visible lines, and font size can be adjusted in the plugin settings.
 
 Until it reaches the Community directory, install it with BRAT from `https://github.com/philaxis/markdown-lens`.
 
