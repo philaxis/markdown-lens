@@ -83,3 +83,13 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+.markdown-lens-selection-marker {
+  position: absolute;
+  z-index: 2;
+  height: 1.5em;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--interactive-accent) 35%, transparent);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
