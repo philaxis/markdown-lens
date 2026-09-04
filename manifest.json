@@ -3,7 +3,7 @@
   "name": "Markdown Lens",
   "version": "1.0.5",
   "minAppVersion": "1.5.7",
-  "description": "Preview rendered Markdown at the cursor while writing in Source mode.",
+  "description": "Preview rendered Markdown at the cursor in a linked lens tab or floating overlay.",
   "author": "Juhyeok Kim",
   "authorUrl": "https://github.com/philaxis",
   "isDesktopOnly": true
